@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import setTitle from './setTitle'
+import setTitle from '../decorators/setTitle'
 
-@setTitle
 class Header extends Component {
 
   constructor(props) {
@@ -18,4 +17,4 @@ class Header extends Component {
   }
 }
 
-export default setTitle(Header, '标题')
+export default Header

@@ -10,7 +10,7 @@ class Modal extends Component {
     const {children} = this.props
     return (
       <div>
-        <div>这是modal组件的标题</div>
+        <div>这里是modal组件的标题</div>
         <div>
           {children}
         </div>
