@@ -1,8 +1,19 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
+import WebRouter from './router/index'
+import routeList from './router/routes'
 
 function App() {
+
+  const webRouter = new WebRouter(routeList)
+
+  // function toggleRouter(item) {
+  //   webRouter.push(item.path)
+  //   ReactDOM.render(, document.getElementById('root'));
+  // }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +30,7 @@ function App() {
           Learn React
         </a>
       </header>
+      
     </div>
   );
 }
